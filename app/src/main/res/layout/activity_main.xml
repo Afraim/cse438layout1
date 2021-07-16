@@ -8,24 +8,30 @@
     android:orientation="vertical"
     android:layout_margin="10dp"
     android:background="@color/white">
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:text="@string/head"
-        android:textAlignment="center"
-        android:textSize="38sp"
         android:background="@color/orange"
-        android:textColor="@color/white"/>
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/head"
+            android:textAlignment="center"
+            android:textSize="38sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"/>
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginEnd="5dp">
+        android:layout_margin="5dp">
         <LinearLayout
             android:layout_width="202dp"
             android:layout_height="287dp"
-            android:layout_marginTop="15dp"
+            android:layout_margin="5dp"
             android:background="@color/lite_orange"
             android:orientation="vertical">
 
@@ -70,16 +76,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="285dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="15dp"
+            android:layout_height="290dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
             android:orientation="vertical">
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="138dp"
-                android:background="@color/sky"
-                android:layout_marginBottom="5dp">
+                android:layout_marginBottom="6dp"
+                android:background="@color/sky">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -87,19 +93,19 @@
                     android:layout_marginTop="27dp"
                     android:scaleType="fitCenter"
                     android:src="@mipmap/email"
-
                     />
             </FrameLayout>
+
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="138dp"
-                android:background="@color/deep_gray"
-                android:layout_marginTop="5dp">
+                android:layout_height="131dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/deep_gray">
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="101dp"
+                    android:layout_marginTop="15dp"
                     android:scaleType="fitCenter"
                     android:src="@mipmap/cloud"
 
@@ -112,7 +118,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -120,11 +126,11 @@
             android:layout_height="100dp"
             android:orientation="horizontal"
             android:background="@color/orange"
-            >
+            android:layout_margin="5dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="🔎WWW"
+                android:text="🔍WWW"
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:textSize="45sp"
@@ -135,18 +141,31 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@color/lite_orange"
-            android:layout_marginStart="5dp">
+            android:layout_margin="5dp">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="90dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
                 android:scaleType="fitCenter"
-                android:src="@mipmap/cloud"
+                android:src="@mipmap/clock"
 
                 />
         </FrameLayout>
     </LinearLayout>
-
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sky"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎵Now Playing"
+            android:textAlignment="center"
+            android:textSize="38sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"/>
+    </FrameLayout>
 
 </LinearLayout>
