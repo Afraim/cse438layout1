@@ -51,7 +51,8 @@
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
-            <ImageView
+            <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="111dp"
                 android:src="@mipmap/sun"
@@ -87,7 +88,8 @@
                 android:layout_marginBottom="6dp"
                 android:background="@color/sky">
 
-                <ImageView
+                <ImageButton
+                    android:background="@android:color/transparent"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginTop="27dp"
@@ -102,7 +104,8 @@
                 android:layout_marginTop="10dp"
                 android:background="@color/deep_gray">
 
-                <ImageView
+                <ImageButton
+                    android:background="@android:color/transparent"
                     android:layout_width="match_parent"
                     android:layout_height="101dp"
                     android:layout_marginTop="15dp"
@@ -127,15 +130,16 @@
             android:orientation="horizontal"
             android:background="@color/orange"
             android:layout_margin="5dp">
-            <TextView
+            <Button
+                android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="🔍WWW"
                 android:textColor="@color/white"
                 android:textAlignment="center"
-                android:textSize="45sp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="35sp"
+                android:layout_marginTop="20dp"/>
+
         </LinearLayout>
         <FrameLayout
             android:layout_width="match_parent"
@@ -143,13 +147,13 @@
             android:background="@color/lite_orange"
             android:layout_margin="5dp">
 
-            <ImageView
+            <ImageButton
+                android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginTop="10dp"
                 android:scaleType="fitCenter"
                 android:src="@mipmap/clock"
-
                 />
         </FrameLayout>
     </LinearLayout>
@@ -158,7 +162,8 @@
         android:layout_height="match_parent"
         android:background="@color/sky"
         android:layout_margin="5dp">
-        <TextView
+        <Button
+            android:background="@android:color/transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="🎵Now Playing"
